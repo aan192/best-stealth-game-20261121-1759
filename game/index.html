@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Trash Panda Midnight Gallery</title>
+  <style>
+    body {
+      margin: 0;
+      background: #0d0d12;
+      color: #eee;
+      font-family: system-ui, -apple-system, sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      overflow: hidden;
+    }
+    #game-container {
+      position: relative;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.8);
+      border: 2px solid #333;
+      border-radius: 8px;
+      overflow: hidden;
+      background: #151520;
+    }
+    canvas {
+      display: block;
+      background: #111118;
+    }
+  </style>
+</head>
+<body>
+  <div id="game-container">
+    <canvas id="canvas" width="800" height="600"></canvas>
+  </div>
+  <script type="module" src="./src/main.js"></script>
+</body>
+</html>
